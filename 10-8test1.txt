@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int n,x,y,r;
+long int p=0,q=1;
+clrscr();
+scanf("%d",&n);
+scanf("%d",&x);
+scanf("%d",&y);
+while(n>0)
+{
+r=n%10;
+if(x==r){
+r=y;}
+p=p+(q*r);
+q=q*10;
+n=n/10;
+}
+printf("%ld",p);
+}
