@@ -16,7 +16,7 @@ for(i=0;i<r;i++)
 {
 for(j=0;j<c;j++)
 {
-sum=sum+a[i][j];
-printf("%d\n",sum);
+sum=sum+a[j][i];
+printf("column sum %d\n",sum);
 sum=0;
 }}}
