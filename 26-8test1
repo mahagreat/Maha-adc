@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<string.h>
+void main()
+{
+char a[20];
+int u=0,l=0,i,size,d=0,o=0;
+clrscr();
+printf("enter the value\n");
+gets(a);
+size=strlen(a);
+for(i=0;i<size;i++)
+{
+if(isupper(a[i]))
+u++;
+else if(islower(a[i]))
+l++;
+else if(isdigit(a[i]))
+d++;
+else
+o++;
+}
+printf("upper case letters %d\n",u);
+printf("lower case letters %d\n",l);
+printf("digits are %d\n",d);
+}
