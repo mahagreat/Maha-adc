@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<conio.h>
+int fact(int n);
+void main()
+{
+int n,c;
+clrscr();
+printf("enter the value\n");
+scanf("%d",&n);
+c=fact(n);
+printf("%d",c);
+}
+int fact(int n)
+{
+int temp=1;
+while(n!=0)
+{
+temp=temp*n;
+n--;
+}
+return temp;
+}
