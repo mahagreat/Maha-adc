@@ -1,0 +1,20 @@
+#include<stdio.h>
+#include<conio.h>
+int print();
+int main()
+{
+int a;
+clrscr();
+scanf("%d",&a);
+print(a);
+return 0;
+}
+int print(int a)
+{
+int i;
+for(i=1;i<=a;i++)
+{
+printf("%d\t",i);
+}
+return 0;
+}
